@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Motivational Quotes</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Motivational Quotes</h1>
+  <h2>Instructions:Add your favorite quotes to this application. Only remember a few key-words to a quote? Use the Search Bar to filter out the quotes that only contain those keywords. Use the heart icon to love a quote and move it to the top of the list. Use the trash icon to delete the quote. </h2>
+
+
+  <h3>Quotes</h3>
+  <ul class="quote">
+  <% for(let i=0; i<quotes.length; i++) {%>
+    <li class="quote">
+      <span><%= quotes[i].heart %></span>
+      <span><%= quotes[i].quote %></span>
+      <span><i class="fa fa-heart" aria-hidden="true" ></i></span>
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+
+    </li>
+  <% } %>
+  </ul>
+
+  <h2>Add or Search for a quote</h2>
+
+  <form action="/quotes" method="POST">
+    <input type="text" placeholder="Insert A Quote" name="quote">
+    <button type="submit">Submit</button>
+  </form>
+  <form action="/search" method="GET">
+    <input type="text" placeholder="Search For A Quote" name="search">
+    <button type="submit">Search</button>
+  </form>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

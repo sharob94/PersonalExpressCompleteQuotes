@@ -1,0 +1,41 @@
+body{
+  background:url("peacefulbackground.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+h2{
+  text-align: center;
+  color: white;
+}
+form{
+  text-align: center;
+  margin-top: 1%;
+  color: white;
+}
+h3{
+  text-align: center;
+  color: white;
+}
+
+.quote{
+  list-style: none;
+  color: white;
+}
+
+input{
+  background:black;
+  color:white;
+}
+
+button{
+  background:black;
+  color:white;
+}
+
